@@ -1,7 +1,7 @@
-#include <Wire.h>    
 #include <Adafruit_GFX.h>  
 #include <Adafruit_SSD1306.h>  
 #include <Preferences.h>
+#include <Wire.h>    
 
 Preferences preferences;
 <<<<<<< HEAD:TP4/TP4/TP4.ino
@@ -10,8 +10,9 @@ Preferences preferences;
  int ValorUmbral;
 >>>>>> aa79d385a3a80e93a9dec8efb7555849bbe69bd7:tp_4_st/tp_4_st.ino
 
-#define SCREEN_WIDTH 128
+
 #define SCREEN_HEIGHT 64
+#define SCREEN_WIDTH 128
 
 #define OLED_RESET 4
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);  
@@ -39,8 +40,8 @@ int state;
 >>>>>>> aa79d385a3a80e93a9dec8efb7555849bbe69bd7:tp_4_st/tp_4_st.ino
 #define VOLVER 5
 
-#define BTS 34 // suma
-#define BTR 35 // resta
+#define BTS 34 
+#define BTR 35 
 int BTSlecture;
 int BTRlecture;
 
@@ -232,7 +233,7 @@ Serial.println("GUARDADO");
 
 void dhtFunc() {
 
-  t = dht.readTemperature(); //Leemos la temperatura en grados Celsius
+  t = dht.readTemperature(); 
 }
 void oledFunc()
 {
